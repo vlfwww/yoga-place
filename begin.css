@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+}
+header{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: Raleway,cursive;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    width: 100%;
+}
+.adres{
+    margin-left: 20px;
+    padding-top: 20px;
+    float: left;
+}
+.contacts{
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 20px;
+}
+.contacts>span:not(:last-of-type){
+    margin-right: 20px;
+}
+.contacts a{
+    color: white;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+    font-family: Comfortaa,cursive;
+    margin-top: 30px;
+    padding-top: 70px;
+    
+}
+.links>div>a{
+    text-decoration: none;
+    color: black;
+}
+.links>div{
+    display: inline-block;
+    font-family: Raleway,cursive; 
+    text-transform: uppercase;
+    
+}
+.links>div:hover{
+    text-shadow: 2px 2px 2px black;
+}
+.links>div:not(:last-child){
+    margin-right:60px;
+}
+.links {
+     text-align: center;
+}
+footer
+{
+    margin-top: 50px;
+    height: 120px;
+    background-color: rgb(250, 237, 221);
+}
+.footer-info
+{
+    color: rgb(117, 115, 115);
+    font-size: 1vw;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+.footer-image
+{
+    float: right;
+    padding: 20px 0 0 20px;
+
+}
+
+
+
+.begin_link{
+    text-decoration: underline;
+}
+.begin{
+    margin-top: 100px;
+}
+.begin_flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Raleway,cursive;
+}
+.begin_flex_container>div{
+    flex: 1 1 0;
+    background-color: rgb(250, 237, 221);
+    border-radius: 20px;
+    padding: 20px;
+}
+.flex_title{
+    color: rgb(129, 84, 52);
+    font-size: 1.3em;
+    text-align: center;
+    
+}
+.notation,.expected,.purpose{
+    font-weight: bold;
+    margin-top: 30px;
+}
+.main_text>div,.expected_text>div{
+    margin-top: 30px;
+}
+.line
+{
+    display: flex;
+}
+.line::before,
+.line::after 
+{
+    content: '';
+    display: block;
+    flex-grow: 1;
+    border-bottom: 2px solid black;
+    }
+
+.begin_title,.other_title,.help_title,.take_with_title,.yoga_help_title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Comfortaa,cursive;
+}    
+.begin_text,.other_text,.help_text,.take_with_text,.yoga_help_text{
+    font-family: Raleway,cursive; 
+    margin: 30px 5em 30px 5em;
+    text-indent: 20px;
+    text-align: center;
+}    
+.other_variants{
+    margin-top: 80px;
+}
+.pilates img, .meditation img{
+    width: 600px;
+    height: 600px;
+}
+.meditation,.pilates{
+    margin-left:47vw
+}
+.meditation{
+     margin-top: -450px;
+}
+.meditation_div_text,.pilates_div_text{
+    position: relative;
+    background-color: rgb(250, 237, 221);
+    right: 550px; 
+    top: -550px;
+    width: 600px;
+    height: 580px;
+}
+.pilates_text,.meditation_text{
+    padding: 5vw;
+}
+.pilates_text>p,.meditation_text>p{
+    color: rgb(129, 84, 52);
+    font-size: 1.8vw;
+    font-weight: bold;
+    font-family: Raleway,cursive;
+}
+.more_info{
+    margin-top: 100px;
+    font-family: Raleway,cursive;
+    font-size: 1.3vw;
+}
+.help{
+    margin-top: -450px;
+}
+.help_text>span{
+    color: black;
+    margin-left: -20px;
+}
+.button{
+    background-color: black;
+    font-family: Comfortaa,cursive;
+    font-size: 1em;
+    width: 280px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    padding-top: 8px;
+}
+.button>a{
+    text-decoration: none;
+    color: white;
+}
+.last{
+    margin-top: 50px;
+}
+footer{
+    position: relative;
+    bottom: -100px;
+}
+.rule{
+    background-color: rgb(250, 237, 221);
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+.rule_title{
+    font-size: 1.2em;
+    font-family: Comfortaa,cursive;
+}
+.rule_text{
+    margin: 20px 20vw;
+    font-size: 1em;
+}
+.button_rule>a{
+    text-decoration: none;
+    color: black;
+    font-family: Comfortaa,cursive;
+    font-size: 1em;
+}
+.button_rule{
+    border: 2px solid black;
+    padding: 5px;
+    width: 200px;
+    margin: 50px auto ;
+}
+.take_with,.yoga_help{
+    margin-top: 50px;
+}
+.yoga_help_text{
+    text-align: center;
+}
+.yoga_help_content{
+    display: flex;
+    gap: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.yoga_help_block{
+    background-color: rgb(250, 237, 221);
+    color: black;
+    width: 50vw;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+.yoga_help_block_title{
+    font-family: Comfortaa,cursive;
+    font-size: 1.3em;
+    color: rgb(129, 84, 52);
+    font-weight: 500;
+    margin-top: 50px;
+}
+.yoga_help_block_text{ 
+font-family: Raleway,cursive;
+font-size: 0.7em;
+margin: 20px 3vw 0 3vw;
+}
+.title>a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu>i
+{
+    display: none;
+}
+
+.activeMenu
+{
+    display: grid;
+    grid-template-rows:repeat(5,1fr) ;
+    margin-top: 20px;
+       
+}
+@media screen and (max-width:1180px)
+{
+    .pilates img, .meditation img
+    {
+        width: 300px;
+        height: 300px;
+    }
+    .meditation_div_text,.pilates_div_text
+    {
+       
+        width: 300px;
+        height: 300px;
+        right: 250px; 
+        top: -250px;
+
+    }
+    .meditation
+    {
+        margin-top: -100px;
+        margin-bottom: 300px;
+    }
+    .pilates_text,.meditation_text
+    {
+         padding: 0.4em;
+    }
+    .more_info
+   {
+    margin-top: -7px;
+   }
+   .pilates_text>p,.meditation_text>p{
+        font-size: 1.2em;
+    }
+    .more_info
+    {
+        font-size: 0.8em;
+    }
+}    
+@media screen and (max-width:920px)
+{
+    
+    .begin_text
+    {
+        margin: 10px 2em;
+    }
+    header
+    {
+        display: none;
+    }
+    .links:not(.activeMenu)
+    {
+        display: none;
+    }
+    .notation
+    {
+        font-size: 2vw;
+    }
+    .expected,.purpose
+    {  
+        font-size: 3vw;
+    }
+    .title
+    {
+        margin-top: -50px;
+        text-align: left;
+        font-size: 2em;
+    }
+    .menu>i{
+        display: block;
+        text-align: right;
+        margin-right:2em ;
+        margin-top: -25px;
+    }
+    .menu>i{
+        font-size: 2em;
+    }
+   
+    .links div:last-of-type
+    {
+        text-align: center;
+        margin: -15px auto 0 auto;
+    }
+    .links div
+    {
+        width: 100%; 
+        font-size: 1.5em;
+    }
+    .begin_flex_container
+    {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1;
+    }
+    .footer-image
+    {
+        display: none;
+    }
+    .footer-info
+    {
+        font-size: 1em;
+    }
+    .begin_title,.other_title,.help_title,.take_with_title,.yoga_help_title
+    {
+        font-size: 1.3em;
+    }
+    .yoga_help_content
+    {
+       display: grid;
+       grid-template-rows: repeat(3,1fr);
+    }
+    .yoga_help_block
+    {
+        width: 100%;
+    }
+    .notation
+    {
+        font-size: 1em;
+    }
+}       
+@media screen and (max-width:670px)
+{
+    .meditation_div_text,.pilates_div_text
+    {
+        width: 300px;
+        height: 300px;
+        right: 0; 
+        top: 0;
+
+    }
+    .meditation,.pilates{
+        margin-left:20vw;
+    }
+    .meditation>img,.pilates>img{
+        margin-bottom: 20px;
+    }
+    .meditation{
+        margin-top: 50px;
+        margin-bottom: 500px;
+    }
+}

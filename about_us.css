@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+}
+header{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: Raleway,cursive;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    width: 100%;
+}
+.adres{
+    margin-left: 20px;
+    padding-top: 20px;
+    float: left;
+}
+.contacts{
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 20px;
+}
+.contacts>span:not(:last-of-type){
+    margin-right: 20px;
+}
+.contacts a{
+    color: white;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+    font-family: Comfortaa,cursive;
+    margin-top: 30px;
+    padding-top: 70px;
+    
+}
+.links>div>a{
+    text-decoration: none;
+    color: black;
+}
+.links>div{
+    display: inline-block;
+    font-family: Raleway,cursive; 
+    text-transform: uppercase;
+    
+}
+.links>div:hover{
+    text-shadow: 2px 2px 2px black;
+}
+.links>div:not(:last-child){
+    margin-right:60px;
+}
+.links {
+     text-align: center;
+}
+footer
+{
+    margin-top: 50px;
+    height: 120px;
+    background-color: rgb(250, 237, 221);
+}
+.footer-info
+{
+    color: rgb(117, 115, 115);
+    font-size: 1vw;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+.footer-image
+{
+    float: right;
+    padding: 20px 0 0 20px;
+
+}
+.line
+{
+    display: flex;
+}
+.line::before,
+.line::after 
+{
+    content: '';
+    display: block;
+    flex-grow: 1;
+    border-bottom: 2px solid black;
+}
+.title>a{
+    text-decoration: none;
+    color: black;
+}
+.about_us,.practika,.location{
+    margin-top: 50px;
+}
+.about_us_title,.practika_title,.location_title,.values_title,.team_title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Comfortaa,cursive;
+}
+.about_us_link{
+    text-decoration: underline;
+}
+.about_us_text,.practika_text,.location_text,.values_text,.team_text{
+    font-family: Raleway,cursive; 
+    margin: 30px 10em 30px 10em;
+    text-indent: 20px;
+    text-align: center;
+}
+.about_us_container{
+    background-color: rgb(250, 237, 221);
+    display: flex;
+    gap: 10px;
+    padding: 50px 10em ;
+}
+.about_us_block
+{
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    padding: 30px 10px;
+}
+.about_us_block_main{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.menu>i{
+    display: none;
+}
+.images
+{
+    margin-left: 4em;
+    width: 50%;
+    margin-top: 20px;
+}
+.main_image
+{
+    width: 300px;
+    height: 400px;
+    box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.main_image>img
+{
+    width: 300px;
+    height: 400px;
+}
+.image_bottom
+{
+    position: relative;
+    top:-300px;
+    left: 80px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.image_bottom>img
+{
+    width: 300px;
+    height: 200px;
+}
+.image_left
+{
+    position: relative;
+    top:-315px;
+    left:320px;
+    height: 230px;
+    width: 190px;
+    box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.image_left>img
+{
+    height: 230px;
+    width: 190px;
+}
+.location_block
+{
+    margin: 0 7em 200px 5em;
+}
+.location_block_text
+{
+   margin-top: -650px;
+   float: right;
+   width: 30%;
+   font-family: Raleway,cursive;
+}
+.location_block_text>h3{
+    font-family: Comfortaa,cursive;
+    margin-bottom: 60px;
+}
+.margin,.values
+{
+    margin-top: -350px;
+}
+.team{
+    margin-top: 100px;
+}
+.ps
+{
+    font-family: Comfortaa,cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.activeMenu
+    {
+        display: grid;
+        grid-template-rows:repeat(5,1fr) ;
+        margin-top: 20px;
+       
+    }
+@media screen and (max-width:1147px){
+    .location_block_text
+        {
+            margin-top: -250px;
+            float: none;
+            width: 100%;
+            font-family: Raleway,cursive;
+        }
+        .margin,.values
+        {
+            margin-top: -10px;
+        }
+        .images
+        {
+            margin: 0 auto;
+        }
+        .location_block
+        {
+            margin-left: 0;
+        }
+        .location_block_text
+        {
+            margin-left: 5em;
+        }
+    .links:not(.activeMenu),header
+    {
+        display: none;
+    }
+    .title
+    {
+        margin-top: -50px;
+        text-align: left;
+        font-size: 2em;
+    }
+    .menu>i{
+        display: block;
+        text-align: right;
+        margin-right:2em ;
+        margin-top: -25px;
+        font-size: 2em;
+    }
+    .links div:last-of-type
+    {
+       
+        margin: -15px auto 0 auto;
+    }
+    .links div
+    {
+        width: 100%; 
+        font-size: 1.5em;
+    }
+    .links div:last-of-type{
+        text-align: center;
+    }
+    .footer-image
+    {
+        display: none;
+    }
+    .footer-info
+    {
+        font-size: 1em;
+    }
+    .about_us_text,.practika_text,.location_text,.values_text,.team_text
+    {
+        font-size: 1em;
+        margin: 30px 1em;
+        text-align: center;
+    }
+    .about_us_title,.practika_title,.location_title,.values_title,.team_title
+    {
+        font-size: 1.2em;
+    }
+    .about_us_container
+    {
+       display: grid;
+       grid-template-rows: repeat(4,1fr);
+    }
+    .about_us_block{
+        width: 100%;
+    }
+    .about_us_block_main
+    {
+        font-size: 2em;
+    }
+}
+ @media screen and (max-width:680px)
+{
+  
+    .about_us_container
+    {
+        padding: 50px 5em ;
+    }
+    .images
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 400px;
+        height: 600px;
+        margin-bottom: 100px;
+        gap:10px;
+        margin-left: 20px;
+    }
+    .main_image>img,.image_left>img
+    {
+        width: 200px;
+        height: 300px;
+    }
+    .main_image{
+        width: 200px;
+        height: 300px;
+    }
+    .image_left{
+        width: 200px;
+        height: 300px;
+        grid-row: 1;
+    }
+    .image_bottom>img
+    {
+        width: 410px;
+        height: 300px;
+    }
+    .image_bottom
+    {
+        width: 400px;
+        height: 300px;
+        grid-column: 1/span 2;
+    }
+    .location_block_text
+    {
+        margin: 0;
+        margin-left: 3em;
+    }
+    .image_left,.image_bottom,.main_image{
+        position: static;
+    }
+}
